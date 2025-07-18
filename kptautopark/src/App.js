@@ -12,7 +12,7 @@ export default function HomePage() {
         <header className="bg-[#2b6777] shadow-lg sticky top-0 z-50 opacity-98">
           <div className="container mx-auto flex justify-between items-center px-6 lg:px-20 py-4 ">
             <div className="flex items-center">
-              <img src="/logo.png" alt="KPT Auto Park Logo" className="h-10 w-auto" />
+              <img src={process.env.PUBLIC_URL + "/logo.png"} alt="KPT Auto Park Logo" className="h-10 w-auto" />
             </div>
 
             {/* Desktop nav */}
@@ -69,7 +69,7 @@ export default function HomePage() {
                   key={label}
                   href={`#${label.toLowerCase()}`}
                   className="block text-white font-medium text-base hover:text-[#81e6d9]"
-                  onClick={() => setMenuOpen(false)} // close menu on click
+                  onClick={() => setMenuOpen(false)}
                 >
                   {label}
                 </a>
@@ -82,7 +82,7 @@ export default function HomePage() {
         <section
           id="home"
           className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url("/jai.png")' }}
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/jai.png"})` }}
         >
           {/* Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -127,7 +127,7 @@ export default function HomePage() {
                   className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
                   <img
-                    src={src}
+                    src={process.env.PUBLIC_URL + src}
                     alt={`About ${index + 1}`}
                     className="w-full h-[250px] object-cover transform hover:scale-105 transition-transform duration-300"
                   />
@@ -156,7 +156,7 @@ export default function HomePage() {
                 >
                   <div className="overflow-hidden rounded mb-4">
                     <img
-                      src={service.img}
+                      src={process.env.PUBLIC_URL + service.img}
                       alt={service.title}
                       className="w-full h-40 object-cover transform hover:scale-110 transition-transform duration-300"
                     />
@@ -199,7 +199,7 @@ export default function HomePage() {
                 >
                   <div className="overflow-hidden rounded mb-4">
                     <img
-                      src={item.img}
+                      src={process.env.PUBLIC_URL + item.img}
                       alt={item.title}
                       className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
                     />
