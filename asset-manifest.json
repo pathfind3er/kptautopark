@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kptautopark/static/css/main.17984b39.css",
-    "main.js": "/kptautopark/static/js/main.efda5b46.js",
+    "main.js": "/kptautopark/static/js/main.8747a208.js",
     "static/js/488.04f3d68e.chunk.js": "/kptautopark/static/js/488.04f3d68e.chunk.js",
     "index.html": "/kptautopark/index.html",
     "main.17984b39.css.map": "/kptautopark/static/css/main.17984b39.css.map",
-    "main.efda5b46.js.map": "/kptautopark/static/js/main.efda5b46.js.map",
+    "main.8747a208.js.map": "/kptautopark/static/js/main.8747a208.js.map",
     "488.04f3d68e.chunk.js.map": "/kptautopark/static/js/488.04f3d68e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17984b39.css",
-    "static/js/main.efda5b46.js"
+    "static/js/main.8747a208.js"
   ]
 }
